@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExchangeIMPViewController">
+            <connections>
+                <outlet property="view" destination="75G-Ez-FjM" id="U9M-h5-qN3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="75G-Ez-FjM">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-Mt-fcK">
+                    <rect key="frame" x="8" y="169" width="304" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFf-ve-rkz">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
+                            <color key="backgroundColor" red="0.57758532070000002" green="0.92130962169999997" blue="0.83877182989999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="2dS-uT-vVR"/>
+                            </constraints>
+                            <state key="normal" title="交换button1/button2的实现"/>
+                            <connections>
+                                <action selector="exchangeIMP:" destination="-1" eventType="touchUpInside" id="Dnh-8H-QaE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7x-PW-nL5">
+                            <rect key="frame" x="0.0" y="55" width="304" height="40"/>
+                            <color key="backgroundColor" red="0.92130962169999997" green="0.75153819209999995" blue="0.49435187689999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="lKu-Mb-Cwv"/>
+                            </constraints>
+                            <state key="normal" title="button1"/>
+                            <connections>
+                                <action selector="button1Action:" destination="-1" eventType="touchUpInside" id="gj9-Yu-NL0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tib-Uf-A93">
+                            <rect key="frame" x="0.0" y="110" width="304" height="40"/>
+                            <color key="backgroundColor" red="0.92130962169999997" green="0.75153819209999995" blue="0.49435187689999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="4Py-SJ-xIy"/>
+                            </constraints>
+                            <state key="normal" title="button2"/>
+                            <connections>
+                                <action selector="button2Action:" destination="-1" eventType="touchUpInside" id="4sk-2B-6kd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="tib-Uf-A93" secondAttribute="bottom" id="81k-16-dnI"/>
+                        <constraint firstItem="u7x-PW-nL5" firstAttribute="centerY" secondItem="jTG-Mt-fcK" secondAttribute="centerY" id="OTz-tZ-aQh"/>
+                        <constraint firstAttribute="trailing" secondItem="u7x-PW-nL5" secondAttribute="trailing" id="Udi-ds-VZD"/>
+                        <constraint firstItem="aFf-ve-rkz" firstAttribute="top" secondItem="jTG-Mt-fcK" secondAttribute="top" id="VUH-Df-9Ih"/>
+                        <constraint firstItem="u7x-PW-nL5" firstAttribute="leading" secondItem="jTG-Mt-fcK" secondAttribute="leading" id="Waa-5o-pvI"/>
+                        <constraint firstItem="aFf-ve-rkz" firstAttribute="leading" secondItem="jTG-Mt-fcK" secondAttribute="leading" id="bdx-qN-RW9"/>
+                        <constraint firstAttribute="height" constant="150" id="mD3-9l-zi0"/>
+                        <constraint firstItem="tib-Uf-A93" firstAttribute="leading" secondItem="jTG-Mt-fcK" secondAttribute="leading" id="mH3-WZ-a7x"/>
+                        <constraint firstItem="u7x-PW-nL5" firstAttribute="centerX" secondItem="jTG-Mt-fcK" secondAttribute="centerX" id="ops-M6-MxQ"/>
+                        <constraint firstAttribute="trailing" secondItem="tib-Uf-A93" secondAttribute="trailing" id="ttC-9u-P3S"/>
+                        <constraint firstAttribute="width" constant="304" id="wMD-og-Qzf"/>
+                        <constraint firstAttribute="trailing" secondItem="aFf-ve-rkz" secondAttribute="trailing" id="zU6-ht-HA7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jTG-Mt-fcK" firstAttribute="centerX" secondItem="75G-Ez-FjM" secondAttribute="centerX" id="4Jy-WK-0E8"/>
+                <constraint firstItem="jTG-Mt-fcK" firstAttribute="centerY" secondItem="75G-Ez-FjM" secondAttribute="centerY" constant="-40" id="oJm-mF-bLN"/>
+            </constraints>
+            <point key="canvasLocation" x="280" y="311"/>
+        </view>
+    </objects>
+</document>
